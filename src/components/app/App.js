@@ -9,6 +9,18 @@ import "./app.scss";
 const App = () => {
 	const [todos, setTodos] = useState([]);
 
+	useEffect(() => {
+		const data = localStorage.getItem("TODOS_LIST");
+
+		if (data) {
+			setTodos(JSON.parse(data));
+		}
+	}, []);
+
+	useEffect(() => {
+		localStorage.setItem("TODOS_LIST", JSON.stringify(todos));
+	}, [todos]);
+
 	const addTodo = (todoTitle) => {
 		const newTodo = {
 			id: uuidv4(),
