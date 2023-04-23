@@ -1,0 +1,29 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+*:focus {
+	outline: $outline !important;
+	outline-offset: $outline-offset;
+
+	body.using-mouse & {
+		outline: none !important;
+	}
+}
+
+body {
+	font-size: $font-size-mobile;
+	line-height: $line-height-mobile;
+
+	font-family: $font-family-base;
+	font-weight: 400;
+
+	color: $color--text;
+
+	@media (min-width: 768px) {
+		font-size: $font-size-base;
+		line-height: $line-height-base;
+	}
+}

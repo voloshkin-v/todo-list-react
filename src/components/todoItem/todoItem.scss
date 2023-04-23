@@ -1,0 +1,41 @@
+@import "../../assets/scss/settings/init";
+
+.todo-list__item {
+	margin-bottom: 20px;
+	min-height: 48px;
+
+	&:not(.todo-list__item--editing) {
+		display: flex;
+		padding: 10px 16px;
+		align-items: center;
+		border-radius: 5px;
+		background: $color--primary;
+	}
+
+	.is-completed {
+		text-decoration: line-through;
+		opacity: 0.5;
+	}
+
+	div {
+		margin-left: auto;
+		padding-left: 20px;
+		display: flex;
+		gap: 5px;
+
+		button {
+			svg {
+				transition: $transition;
+			}
+			&:hover {
+				svg {
+					opacity: 0.5;
+				}
+			}
+		}
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}

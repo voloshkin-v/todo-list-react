@@ -1,0 +1,25 @@
+// Fonts
+$font-family-base: "Open Sans", sans-serif;
+$font-family-headings: "";
+
+$font-size-base: 20px;
+$line-height-base: 1.5;
+
+$font-size-mobile: 16px;
+$line-height-mobile: 1.5;
+
+// COLORS
+$color--primary: #494993;
+$color--secondary: #28204a;
+$color--white: #ffffff;
+$color--text: #ffffff;
+$color--outline: #ffffff;
+
+// Transitions
+$transition-speed: 0.2s;
+$transition-timing-function: ease-in-out;
+$transition: $transition-speed $transition-timing-function;
+
+// Outline
+$outline: 2px solid $color--outline;
+$outline-offset: 2px;

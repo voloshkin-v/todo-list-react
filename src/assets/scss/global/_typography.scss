@@ -1,0 +1,56 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 14px 0;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+button {
+	border: none;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	color: currentColor;
+
+	&.button--white {
+		box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+		border-radius: 5px;
+		padding: 16px;
+		min-width: 100px;
+		height: 48px;
+		background: $color--white;
+		color: $color--secondary;
+	}
+
+	svg {
+		color: currentColor;
+	}
+}
+
+input {
+	appearance: none;
+	-webkit-appearance: none;
+
+	padding: 12px 16px;
+	height: 48px;
+	border-radius: 5px;
+	border: 0;
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+	background-color: $color--white;
+}
+
+p {
+	margin: 0 0 12px 0;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
