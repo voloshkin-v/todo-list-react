@@ -1,4 +1,4 @@
-@import "../../assets/scss/settings/init";
+@import '../../assets/scss/settings/init';
 
 .add-form {
 	display: flex;
@@ -7,5 +7,9 @@
 
 	&__input {
 		flex: 1;
+
+		&.nonvalidated {
+			box-shadow: 0 0 5px 5px rgba(183, 6, 6, 0.856);
+		}
 	}
 }

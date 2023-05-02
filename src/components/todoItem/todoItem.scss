@@ -1,4 +1,4 @@
-@import "../../assets/scss/settings/init";
+@import '../../assets/scss/settings/init';
 
 .todo-list__item {
 	margin-bottom: 20px;
@@ -15,6 +15,10 @@
 	.is-completed {
 		text-decoration: line-through;
 		opacity: 0.5;
+	}
+
+	& > button {
+		padding: 0;
 	}
 
 	div {

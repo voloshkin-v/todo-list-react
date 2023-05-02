@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from "react";
-import { v4 as uuidv4 } from "uuid";
+import React, { useState, useEffect } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
-import AddForm from "../addForm/AddForm";
-import TodoList from "../todoList/TodoList";
+import AddForm from '../addForm/AddForm';
+import TodoList from '../todoList/TodoList';
 
-import "./app.scss";
+import './app.scss';
 
 const App = () => {
 	const [todos, setTodos] = useState([]);
 
 	useEffect(() => {
-		const data = localStorage.getItem("TODOS_LIST");
+		const data = localStorage.getItem('TODOS_LIST');
 
 		if (data) {
 			setTodos(JSON.parse(data));
@@ -18,7 +18,7 @@ const App = () => {
 	}, []);
 
 	useEffect(() => {
-		localStorage.setItem("TODOS_LIST", JSON.stringify(todos));
+		localStorage.setItem('TODOS_LIST', JSON.stringify(todos));
 	}, [todos]);
 
 	const addTodo = (todoTitle) => {
@@ -41,7 +41,6 @@ const App = () => {
 	};
 
 	const deleteTodo = (id) => {
-		console.log(id);
 		setTodos(todos.filter((todo) => todo.id !== id));
 	};
 
